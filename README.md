@@ -1,17 +1,17 @@
-# Pharmaceutical supply chain using Hyperledger sawtooth
+# Agricultural supply chain using Hyperledger sawtooth
 
 ## Description
 
 The supply chain involves:
 
- 1. Manufacturer  
-         The manufacturer manufactures the medicine in units, or *batches*, identified by a *batchID*. The manufacture now owns the batch. The manufacturer can send this batch to a distributor.
+ 1. Farmer  
+         The manufacturer produces the crops in units, or *batches*, identified by a *batchID*. The farmer now owns the batch. The farmer can send this batch to a distributor.
  2. Distributor  
-         The distributor now has the option to either *accept* or *reject* the batch. If rejected, ownership doesn't change; the batch remains under the manufacture. If the batch is accepted, ownership is transferred to the distributor. The distributor can send this batch to a pharmacy.
- 3. Pharmacy  
-         The pharmacy has the option to *accept* or *reject* the batch; this is similar to the distributor.
+         The distributor now has the option to either *accept* or *reject* the batch. If rejected, ownership doesn't change; the batch remains under the farmer. If the batch is accepted, ownership is transferred to the distributor. The distributor can send this batch to a retailer.
+ 3. Retailer  
+         The retailer has the option to *accept* or *reject* the batch; this is similar to the distributor.
  4. Admin  
-         The admin can add manufacturers, distributors and pharmacies.
+         The admin can add farmer, distributors and retailers.
 
 ## Details
 1. Navigate into the folder in the terminal.  
@@ -30,6 +30,6 @@ This starts the client, processor, network,  validator, dev-mode consensus engin
      * `# python3 pharmacies.py` 
   5. Open the webpages in a browser:  
 	  * `0.0.0.0/5000` - for the admin  
-	  * `0.0.0.0/5010` - for the manufacturer  
+	  * `0.0.0.0/5010` - for the farmer  
 	  * `0.0.0.0/5020`- for the distributor  
-	  * `0.0.0.0/5030` - for the pharmacy  
+	  * `0.0.0.0/5030` - for the retailer  
